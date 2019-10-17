@@ -12,3 +12,11 @@ correct format: [$1]($2)
 ```
 if\((.*)\)
 ```
+
+* Convert a boolean array with spaces to commas
+```
+get the array: \[(0|1) (.|\n)*\]
+get just the elements:  (0|1)\n?
+
+replace with commas: ,$1
+```
